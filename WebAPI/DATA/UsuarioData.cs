@@ -43,9 +43,9 @@ namespace WebAPI.DATA
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID", oUsuario.ID);
                 cmd.Parameters.AddWithValue("@Nombre", oUsuario.Nombre);
-                cmd.Parameters.AddWithValue("Apellido", oUsuario.Apellido);
-                cmd.Parameters.AddWithValue("Telefono", oUsuario.Telefono);
-                cmd.Parameters.AddWithValue("Direccion", oUsuario.Direccion);
+                cmd.Parameters.AddWithValue("@Apellido", oUsuario.Apellido);
+                cmd.Parameters.AddWithValue("@Telefono", oUsuario.Telefono);
+                cmd.Parameters.AddWithValue("@Direccion", oUsuario.Direccion);
 
                 try
                 {

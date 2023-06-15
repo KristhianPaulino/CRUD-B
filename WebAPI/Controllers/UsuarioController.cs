@@ -9,7 +9,7 @@ namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-  
+
     public class UsuarioController : ControllerBase
     {
         [HttpGet("Get")]
@@ -30,8 +30,8 @@ namespace WebAPI.Controllers
             return UsuarioData.Registrar(oUsuario);
         }
 
-        [HttpPut("Put")]
-        public bool Put([FromBody] Usuario oUsuario)
+        [HttpPut("{ID:int}")]
+        public bool Put( [FromBody] Usuario oUsuario)
         {
             return UsuarioData.Modificar(oUsuario);
         }
